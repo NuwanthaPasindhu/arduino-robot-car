@@ -28,6 +28,8 @@ void loop() {
     digitalWrite(13, LOW);
     digitalWrite(4, LOW);
     digitalWrite(5, LOW);
+
+    
     }
        if (x == '1') {
     digitalWrite(12, LOW);
@@ -45,17 +47,30 @@ void loop() {
   }
 
   if (x == '3') {
-    Serial.println("Left");
+//    Serial.println("Left");
      digitalWrite(12, HIGH);
-    digitalWrite(13, LOW);
-    digitalWrite(5, LOW);
-    digitalWrite(4, HIGH);
+     digitalWrite(13, LOW);
+     digitalWrite(5, LOW);
+     digitalWrite(4, HIGH);
+      delay(1000);
+     digitalWrite(12, LOW);
+     digitalWrite(13, LOW);
+     digitalWrite(5, LOW);
+     digitalWrite(4, LOW);
+        delay(1000);
+    
   }
   if (x == '4') {
     digitalWrite(12, LOW);
     digitalWrite(13, HIGH);
     digitalWrite(5, HIGH);
     digitalWrite(4, LOW);
+    delay(1000);
+     digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+    digitalWrite(5, LOW);
+    digitalWrite(4, LOW);    
+       delay(1000);
   }
     if (x == '5') {
     digitalWrite(12, LOW);
